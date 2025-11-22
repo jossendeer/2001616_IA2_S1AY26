@@ -1,0 +1,89 @@
+<!-- Jossen Deer (2001616)
+     Web Programming UM2
+     Individual Assignment #2 - https://jossendeer.github.io/2001616_IA2_S1AY26/Codes/
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cart — ArcticFlow</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="../Assets/logo.png" class="logo">
+      <span class="brand-name">ArcticFlow</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="account.html">My Account</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>Your Cart</h2>
+
+  <!-- CART CONTENTS -->
+  <section id="cart-contents"></section>
+
+  <!-- SUMMARY -->
+  <section class="cart-summary">
+
+    <h3>Order Summary</h3>
+
+    <div><span>Subtotal:</span> <span>$<span id="subtotal">0.00</span></span></div>
+    <div><span>Discount:</span> <span>-$<span id="discount">0.00</span></span></div>
+
+    <label for="shipping-select" style="margin-top:1rem;">Shipping Method</label>
+    <select id="shipping-select">
+      <option value="standard">Standard — $6</option>
+      <option value="express">Express — $12</option>
+    </select>
+
+    <div><span>Shipping:</span> <span>$<span id="shipping-cost">0.00</span></span></div>
+    <div><span>Tax (5%):</span> <span>$<span id="tax">0.00</span></span></div>
+
+    <hr style="margin:0.7rem 0;">
+
+    <div><strong>Total:</strong> 
+      <strong>$<span id="total">0.00</span></strong>
+    </div>
+
+    <!-- COUPON SECTION -->
+    <div style="margin-top:1rem;">
+      <label for="coupon-input">Coupon Code</label>
+      <input id="coupon-input" placeholder="ARCTIC10 or WELCOME5">
+      <button id="apply-coupon" class="btn primary" style="margin-top:0.5rem;">Apply Coupon</button>
+      <button id="remove-coupon" class="btn outline" style="margin-top:0.5rem;">Remove Coupon</button>
+      <p id="coupon-info" class="muted small" style="margin-top:0.5rem;"></p>
+    </div>
+
+    <button id="clear-cart" class="btn outline" style="margin-top:1rem;">Clear Cart</button>
+
+    <button class="btn primary" style="margin-top:1rem;width:100%;" 
+            onclick="window.location.href='checkout.html'">
+      Proceed to Checkout
+    </button>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> ArcticFlow</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

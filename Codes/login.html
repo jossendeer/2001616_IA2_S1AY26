@@ -1,0 +1,45 @@
+<!-- Jossen Deer (2001616)
+     Web Programming UM2
+     Individual Assignment #2 - https://jossendeer.github.io/2001616_IA2_S1AY26/Codes/
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login — ArcticFlow</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div id="notice-root" aria-live="polite"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="../Assets/logo.png" alt="ArcticFlow logo" class="logo">
+        <span class="brand-name">ArcticFlow</span>
+      </a>
+      <nav id="primary-nav" class="nav">
+        <a href="register.html" class="nav-link">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h2>Login</h2>
+    <form id="login-form" class="auth-form" novalidate>
+      <label for="login-username">Username</label>
+      <input id="login-username" name="username" required>
+      <label for="login-password">Password</label>
+      <input id="login-password" name="password" type="password" required>
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Login</button>
+      </div>
+      <div id="login-error" class="error" role="alert" aria-live="assertive"></div>
+    </form>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>

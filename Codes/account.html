@@ -1,0 +1,58 @@
+<!-- Jossen Deer (2001616)
+     Web Programming UM2
+     Individual Assignment #2 - https://jossendeer.github.io/2001616_IA2_S1AY26/Codes/
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>My Account — ArcticFlow</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="../Assets/logo.png" class="logo">
+      <span class="brand-name">ArcticFlow</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <h2>My Account</h2>
+
+  <section id="account-info" class="account-box">
+    <p id="acc-name">Name: —</p>
+    <p id="acc-email">Email: —</p>
+    <p id="acc-username">Username: —</p>
+  </section>
+
+  <h3>Previous Orders</h3>
+
+  <section id="orders-list"></section>
+
+  <button id="logout-btn" class="btn outline" style="margin-top:1rem;">
+    Log Out
+  </button>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; <span id="year"></span> ArcticFlow</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

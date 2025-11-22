@@ -1,0 +1,54 @@
+<!-- Jossen Deer (2001616)
+     Web Programming UM2
+     Individual Assignment #2 - https://jossendeer.github.io/2001616_IA2_S1AY26/Codes/
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Register — ArcticFlow</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div id="notice-root" aria-live="polite"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="../Assets/logo.png" alt="ArcticFlow logo" class="logo">
+        <span class="brand-name">ArcticFlow</span>
+      </a>
+    </div>
+  </header>
+
+  <main class="container main">
+    <h2>Register</h2>
+    <form id="register-form" class="auth-form" novalidate>
+      <label for="r-fullname">Full name</label>
+      <input id="r-fullname" name="fullname" required>
+
+      <label for="r-dob">Date of Birth</label>
+      <input id="r-dob" name="dob" type="date" required>
+
+      <label for="r-email">Email</label>
+      <input id="r-email" name="email" type="email" required>
+
+      <label for="r-username">Username</label>
+      <input id="r-username" name="username" required>
+
+      <label for="r-password">Password</label>
+      <input id="r-password" name="password" type="password" required>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Register</button>
+      </div>
+
+      <div id="register-messages" class="error" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script src="../script.js"></script>
+</body>
+</html>
