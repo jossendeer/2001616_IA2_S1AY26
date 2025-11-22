@@ -1,0 +1,61 @@
+<!-- Jossen Deer (2001616)
+     Web Programming UM2
+     Individual Assignment #2 - https://jossendeer.github.io/2001616_IA2_S1AY26/Codes/
+-->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ArcticFlow — Home</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="../Assets/logo.png" alt="ArcticFlow logo" class="logo">
+        <span class="brand-name">ArcticFlow</span>
+      </a>
+
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" id="cart-link">Cart (<span id="cart-count">0</span>)</a>
+        <a href="account.html">My Account</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main">
+
+    <section class="hero">
+      <h1>Adventure-Ready. Eco-Friendly.</h1>
+      <p>Sustainably-made insulated bottles, mugs and lunch containers built to keep your food hot or cold on every journey.</p>
+    </section>
+
+    <!-- CATEGORY BUTTONS -->
+    <section class="categories">
+      <button class="cat-btn" data-cat="all">All</button>
+      <button class="cat-btn" data-cat="bottles">Bottles</button>
+      <button class="cat-btn" data-cat="lunch">Lunch Containers</button>
+      <button class="cat-btn" data-cat="mugs">Mugs</button>
+    </section>
+
+    <section id="products" class="products-grid" aria-live="polite">
+      <!-- Products injected by script.js -->
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> ArcticFlow — Sustainable Insulation.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
